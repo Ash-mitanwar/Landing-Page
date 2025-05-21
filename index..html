@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wolves - Nature's Fierce Guardians</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Wolves</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#types">Types</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#habitat">Habitat</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <h1>Discover the World of Wolves</h1>
+  </header>
+
+  <section class="about fade-in" id="about">
+    <h2>About Wolves</h2>
+    <p>Wolves are powerful and intelligent wild canines known for their complex pack behavior, hunting skills, and haunting howls. As apex predators, wolves play a crucial role in maintaining the balance of ecosystems by keeping prey populations in check. They are highly social animals, often living and hunting in structured family units called packs.</p>
+  </section>
+
+ <section class="types fade-in" id="types">
+  <h2>Types of Wolves</h2>
+  <div class="cards">
+    <div class="card gray-wolf">
+      <h3>Gray Wolf</h3>
+      <p>The most widespread species, known for its adaptability and large packs.</p>
+    </div>
+    <div class="card arctic-wolf">
+      <h3>Arctic Wolf</h3>
+      <p>Found in the Arctic Circle, they have white fur and survive in freezing climates.</p>
+    </div>
+    <div class="card red-wolf">
+      <h3>Red Wolf</h3>
+      <p>A rare and critically endangered species native to the southeastern US.</p>
+    </div>
+    <div class="card ethiopian-wolf">
+      <h3>Ethiopian Wolf</h3>
+      <p>A unique highland predator, it's Africa’s most endangered carnivore.</p>
+    </div>
+    <div class="card indian-wolf">
+      <h3>Indian Wolf</h3>
+      <p>Adapted to dry, open habitats, this wolf roams India's grasslands and semi-arid zones.</p>
+    </div>
+    <div class="card himalayan-wolf">
+      <h3>Himalayan Wolf</h3>
+      <p>This high-altitude species is adapted to cold and low-oxygen environments.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="culture fade-in" id="culture">
+  <h2>Wolves in Culture & Mythology</h2>
+  <p>Wolves have inspired myths worldwide. In Norse tales, Fenrir is a giant wolf linked to the end of the world. Many Native American tribes see wolves as symbols of loyalty and courage. Today, wolves often represent wildness and strength in stories and movies.</p>
+</section>
+
+
+<section class="cta fade-in">
+  <h2>Protect the Pack</h2>
+  <p>Support global efforts to conserve wolves and their natural habitats. Together, we can make a difference.</p>
+  <a href="#contact" class="btn">Join the Movement</a>
+</section>
+
+
+ <section class="facts fade-in" id="facts">
+  <h2>Fascinating Facts</h2>
+  <ul>
+    <li>Wolves live and hunt in packs with strong family bonds.</li>
+    <li>A single howl can travel miles to communicate with the pack.</li>
+    <li>They can cover up to 30 miles a day while hunting.</li>
+    <li>Wolves help keep ecosystems balanced by controlling prey populations.</li>
+  </ul>
+</section>
+
+
+  <section class="habitat fade-in" id="habitat">
+  <h2>Natural Habitat</h2>
+  <p>Wolves thrive in a variety of environments including dense forests, open plains, deserts, tundras, and mountainous regions. They are extremely adaptable creatures that can live in both harsh cold and moderate climates. A single pack’s territory can span hundreds of square miles, depending on the abundance of prey and landscape features.</p>
+  <p>They build dens in secluded spots like hillsides, hollow logs, or rock crevices to raise their pups. Their presence in an ecosystem often indicates a healthy and balanced environment, as they help control populations of deer, elk, and other herbivores.</p>
+</section>
+
+
+ <section class="contact fade-in" id="contact">
+  <h2>Contact</h2>
+  <p>Have questions, ideas, or want to support wolf conservation efforts? We'd love to hear from you.</p>
+  <p>📧 Email us at <strong>wildwolves@nature.org</strong></p>
+  <p>📍 Visit us at: Wolf Conservation HQ, Wildland Reserve, Colorado, USA</p>
+  <p>🌐 Follow us on social media for updates, facts, and community stories.</p>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Wolves Landing Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const fadeIns = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      fadeIns.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
